@@ -278,7 +278,7 @@ function setCustomEffects() {
 
     var timeWarping = gameData.taskData["Time warping"]
     timeWarping.getEffect = function() {
-        var multiplier = 1 + getBaseLog(13, timeWarping.level + 1) 
+        var multiplier = 1 + getBaseLog(13, timeWarping.level + 1) + 10
         return multiplier
     }
 
