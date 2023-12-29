@@ -292,7 +292,7 @@ function setCustomEffects() {
 function getHappiness() {
     var meditationEffect = getBindedTaskEffect("Meditation")
     var butlerEffect = getBindedItemEffect("Butler")
-    var happiness = meditationEffect() * butlerEffect() * gameData.currentProperty.getEffect()
+    var happiness = meditationEffect() * butlerEffect() * gameData.currentProperty.getEffect() * 100
     return happiness
 }
 
